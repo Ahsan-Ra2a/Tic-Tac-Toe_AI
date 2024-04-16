@@ -11,7 +11,7 @@ struct names_and_symbol {
     char symbol;
 };
 
-void board_print(char board[BOARD_SIZE][BOARD_SIZE])
+void board_print(char board[BOARD_SIZE][BOARD_SIZE]);
 void reset_board(char board[BOARD_SIZE][BOARD_SIZE]);
 int is_tie(char board[BOARD_SIZE][BOARD_SIZE]);
 int win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol);
