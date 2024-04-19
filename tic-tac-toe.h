@@ -14,7 +14,7 @@ struct names_and_symbol {
 void board_print(char board[BOARD_SIZE][BOARD_SIZE]);
 void reset_board(char board[BOARD_SIZE][BOARD_SIZE]);
 int is_tie(char board[BOARD_SIZE][BOARD_SIZE]);
-int win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol);
+bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol);
 int player_turn(char board[BOARD_SIZE][BOARD_SIZE], char symbol);
 int easy_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol);
 void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol,char p_symbol);
