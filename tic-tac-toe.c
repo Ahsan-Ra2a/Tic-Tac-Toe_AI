@@ -12,7 +12,15 @@ void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
                 if (win_check(board, symbol))
                     return;
                 board[i][j] = EMPTY_CELL; 
-                
+            }
+        }
+    }
+    for (int i = 0; i < BOARD_SIZE; i++)
+    {
+        for (int j = 0; j < BOARD_SIZE; j++)
+        {
+            if (board[i][j] == EMPTY_CELL)
+            {
                 board[i][j] = p_symbol;
                 if (win_check(board, p_symbol))
                 {
@@ -20,12 +28,9 @@ void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
                     return;
                 }
                 board[i][j] = EMPTY_CELL;
-
-
             }
         }
-    }
-    
+    } 
     easy_mode(board, symbol);
 }
 
