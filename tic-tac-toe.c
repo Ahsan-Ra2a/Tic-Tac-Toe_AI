@@ -160,7 +160,7 @@ void board_print(char board[BOARD_SIZE][BOARD_SIZE])
 	printf(" %c | %c | %c \n",board[2][0],board[2][1],board[2][2]);
 	printf("\n");
 }
- void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
+void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
 {
 	for(int i = 0; i < BOARD_SIZE; i++)
  	{
