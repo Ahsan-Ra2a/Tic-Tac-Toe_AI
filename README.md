@@ -72,6 +72,6 @@ Hard mode employs an advanced minimax algorithm to determine the best possible m
 
 ## Example Usage
 ```
-gcc tic-tac-toe main.c -o tic-tac-toe
+gcc tic-tac-toe main.c -o tic-tac-toe.c
 ./tic-tac-toe
 ```
