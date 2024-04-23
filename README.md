@@ -9,7 +9,7 @@
 </tr>
 <tr>
 	<td> Ahsan</td>
-	<td> 23k-XYZ</td>
+	<td> 23k-0884</td>
 </tr>
 <tr>
 	<td> Urooj Baloch </td>
@@ -44,3 +44,34 @@ a. One of the players gets three of his/her marks in a row (vertically, horizont
 
 b. If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a tie.
 
+Got it! Let's adjust the README accordingly:
+
+# AI Tic Tac Toe
+
+This is a simple Tic Tac Toe game implemented in C, featuring three difficulty modes: Easy, Medium, and Hard, each with its own unique gameplay experience.
+
+## AI Functionality
+This is a simple Tic Tac Toe game implemented in C, featuring three difficulty modes: Easy, Medium, and Hard, each with its own unique gameplay experience.
+
+### Easy Mode
+In Easy mode, the AI generates random moves, making it a simple opponent for players to practice against.
+
+### Medium Mode
+Medium mode allows players to block the AI from winning or force the AI to block their winning moves. If neither player is close to winning, the AI reverts to Easy mode.
+
+### Hard Mode
+Hard mode employs an advanced minimax algorithm to determine the best possible move for the AI, making it a formidable opponent even for experienced players.
+
+## How to Play
+1. Clone the repository to your local machine.
+2. Navigate to the directory where the repository was cloned.
+3. Compile the `main.c` file using a C compiler (e.g., gcc).
+4. Run the compiled executable.
+5. Select the desired difficulty mode when prompted.
+6. Follow the on-screen instructions to play the game.
+
+## Example Usage
+```
+gcc tictactoe main.c -o tictactoe
+./tictactoe
+```
