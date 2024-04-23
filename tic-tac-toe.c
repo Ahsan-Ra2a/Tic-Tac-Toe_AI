@@ -157,15 +157,17 @@ bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
 
 void board_print(char board[BOARD_SIZE][BOARD_SIZE])
 {
-	for(i=0;i<4;i++){
-		if(i%2==0){
+	for(int i = 0; i < BOARD_SIZE+1; i++)
+    {
+		if(i % 2 == 0 ) 
+        {
 			printf("\n---|---|---\n");
 		}
-		else {
+		else 
+        {
 			printf(" %c | %c | %c",board[i][0],board[i][1],board[i][2]);
 		}
 	}
-}
 }
 void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
 {
@@ -175,6 +177,6 @@ void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
 		{
  			board[i][j]=EMPTY_CELL;
 		}
-	 }
- }
+	}
+}
 
