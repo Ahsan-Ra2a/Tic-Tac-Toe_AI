@@ -1,5 +1,5 @@
 # Tic-Tac-Toe_AI
-##TEAM MEMBERS:
+### Team Members
 <table>
 <tr>
 	<th>Name</th>
