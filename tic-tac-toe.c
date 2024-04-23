@@ -1,5 +1,5 @@
 #include "tic-tac-toe.h"
-
+#include <stdio.h>
 #include<stdbool.h>
 
 void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
