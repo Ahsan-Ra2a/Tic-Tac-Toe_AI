@@ -1,5 +1,7 @@
 #include "tic-tac-toe.h"
+
 #include<stdbool.h>
+
 void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
 {
     for (int i = 0; i < BOARD_SIZE; i++)
@@ -130,6 +132,7 @@ int minimum(char board[BOARD_SIZE][BOARD_SIZE], char p_symbol,char symbol) {
 
     return min_val;
 }
+//win check function by urooj baloch
 
 bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
     
@@ -150,7 +153,8 @@ bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
     }
     return false; 
 
-}
+}//end of win check function
+
 void board_print(char board[BOARD_SIZE][BOARD_SIZE])
 {
 	for(i=0;i<4;i++){
