@@ -1,4 +1,5 @@
-# Tic-Tac-Toe_AI ![download](https://github.com/Ahsan-Ra2a/Tic-Tac-Toe_AI/assets/144048378/28fd2ce1-5d2a-4eff-a1d8-d1dbd2afe85f)
+# Tic-Tac-Toe_AI 
+![download](https://github.com/Ahsan-Ra2a/Tic-Tac-Toe_AI/assets/144048378/28fd2ce1-5d2a-4eff-a1d8-d1dbd2afe85f)
 
 ### Team Members
 <table>
