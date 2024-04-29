@@ -179,4 +179,16 @@ void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
 		}
 	}
 }
+//tie function by urooj baloch
+
+bool is_tie(char board[BOARD_SIZE][BOARD_SIZE]) {
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        for (int j = 0; j < BOARD_SIZE; j++) {
+            if (board[i][j] == '.')
+                return false; 
+        }
+    }
+    return true; 
+}
+//end of tie function
 
