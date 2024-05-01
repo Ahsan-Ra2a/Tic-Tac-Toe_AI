@@ -194,25 +194,27 @@ bool is_tie(char board[BOARD_SIZE][BOARD_SIZE]) {
 
 //player turn function by urooj baloch
 
-int player_turn(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
-    int row, col;
-    printf("Enter your move (row column): ");
-    scanf("%d %d", &row, &col);
+int player_turn(char board[BOARD_SIZE][BOARD_SIZE], char symbol)
+{
+    int player_row,player_colm;
+    printf("Enter Row (0, 1 or 2):");
+    scanf("%d",&player_row);
+    printf("Enter column (0, 1 or 2):");
+    scanf("%d",&player_colm);
 
-    if (row < 0 || row >= BOARD_SIZE || col < 0 || col >= BOARD_SIZE) {
-        printf("Invalid move. Please enter row and column numbers between 0 to 2 i.e (0,1,2)");
-        return 0; 
+    if ((player_row > 2 || player_row < 0) || (player_colm > 2 || player_colm < 0))
+    {
+        printf("Out of bound Enter only (0,1,2)!!\n");
+        player_turn(board,symbol);
     }
-
-   
-    if (board[row][col] != '.') {
-        printf("cell is already occupied. Please choose another\n");
-        return 0; 
+    else if (board[player_row][player_colm] == EMPTY_CELL) 
+    {
+        board[player_row][player_colm] = symbol;
+    } 
+    else 
+    {
+        printf("Cell already taken. Try again.\n");
+        player_turn(board,symbol);
     }
-
-   
-    board[row][col] = symbol;
-    return 1; 
 }
-
 //end of player turn function
