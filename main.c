@@ -43,6 +43,35 @@ int main(void)
                 {
                     player_2.symbol = 'X';
                 }
+                while (true)
+                {
+                    printf("%s's Turn\n",player_1.str1);
+                    player_turn(board,player_1.symbol);
+                    board_print(board);
+                    if (win_check(board,player_1.symbol)) 
+                    {
+                        printf("%s wins!\n",player_1.str1);
+                        break;
+                    }
+                    if (is_tie(board)) 
+                    {
+                        printf("It's a tie!\n");
+                        break;
+                    }
+                    printf("%s's Turn\n",player_2.str2);
+                    player_turn(board,player_2.symbol);
+                    board_print(board);
+                    if (win_check(board,player_2.symbol)) 
+                    {
+                        printf("%s wins!\n",player_2.str2);
+                        break;
+                    }
+                    if (is_tie(board)) 
+                    {
+                        printf("It's a tie!\n");
+                        break;
+                    }
+                }
                 break;
             case 2:
                 printf("      MODES      \n");
@@ -67,6 +96,25 @@ int main(void)
                 {
                     AI.symbol = 'X';
                 }
+                while (true)
+                {
+                    printf("%s's Turn\n",player_1.str1);
+                    player_turn(board,player_1.symbol);
+                    board_print(board);
+
+                    if (win_check(board,player_1.symbol)) 
+                    {
+                        printf("%s wins!\n",player_1.str1);
+                        break;
+                    }
+
+                    if (is_tie(board)) 
+                    {
+                        printf("It's a tie!\n");
+                        break;
+                    }
+
+                    printf("AI's turn...\n");
                 break;
             default:
                 printf("Invalid Number!!\n");
