@@ -73,10 +73,7 @@ Hard mode employs an advanced minimax algorithm to determine the best possible m
 ## Example Usage
 ```
 git clone https://github.com/Ahsan-Ra2a/Tic-Tac-Toe_AI.git
-<<<<<<< HEAD
 gcc tic-tac-toe main.c -o tic-tac-toe
-=======
 gcc tic-tac-toe main.c -o tic-tac-toe.c
->>>>>>> d6f5298fbed4c02de4ee66836223d7f8ee55a863
 ./tic-tac-toe
 ```
