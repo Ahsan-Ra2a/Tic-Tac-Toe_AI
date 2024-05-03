@@ -1,10 +1,12 @@
 #include "tic-tac-toe.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void)
 {
 
-    char board[BOARD_SIZE][BOARD_SIZE] = {
+    char board[BOARD_SIZE][BOARD_SIZE] = 
+    {
         {'.', '.', '.'},
         {'.', '.', '.'},
         {'.', '.', '.'}
@@ -115,10 +117,50 @@ int main(void)
                     }
 
                     printf("AI's turn...\n");
+                    switch (choice) 
+                    {
+                        case 1:
+                            easy_mode(board,AI.symbol);
+                            break;
+
+                        case 2:
+                            medium_mode(board,AI.symbol,player_1.symbol);
+                            break;
+
+                        case 3:
+                            hard_mode(board,AI.symbol,player_1.symbol);
+                            break;
+
+                        default:
+                            printf("Invalid choice!!\n");
+                            break;
+                    }
+                    board_print(board);
+
+                    if (win_check(board,AI.symbol)) 
+                    {
+                        printf("AI wins!\n");
+                        break;
+                    }
+
+                    if (is_tie(board)) 
+                    {
+                        printf("It's a tie!\n");
+                        break;
+                    }
+                }
                 break;
             default:
                 printf("Invalid Number!!\n");
                 break;
+        }
+        reset_board(board);
+        printf("Do you want to play again?\nEnter 1 for continue and 0 for exit:");
+        scanf("%d",&choice);
+        if (choice > 1 || choice < 0)
+        {
+            printf("Enter only 1 or 0:");
+            scanf("%d",&choice);
         }
 
     } while (choice != 0);
