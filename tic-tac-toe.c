@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include<stdbool.h>
 #include<time.h>
+#include<stdlib.h>
 int easy_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol)
 {
     srand(time(NULL));
