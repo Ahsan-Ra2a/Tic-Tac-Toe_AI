@@ -1,7 +1,19 @@
 #include "tic-tac-toe.h"
 #include <stdio.h>
 #include<stdbool.h>
+int easy_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol)
+{
+    srand(time(NULL));
+    int x,y;
+    do {
 
+        x = rand() % 3;
+        y = rand() % 3;
+
+    } while (board[x][y] != EMPTY_CELL);
+
+    board[x][y] = symbol;
+}
 void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
 {
     for (int i = 0; i < BOARD_SIZE; i++)
@@ -154,21 +166,16 @@ bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
     return false; 
 
 }//end of win check function
-
+// Board print function 
 void board_print(char board[BOARD_SIZE][BOARD_SIZE])
 {
-	for(int i = 0; i < BOARD_SIZE+1; i++)
-    {
-		if(i % 2 == 0 ) 
-        {
-			printf("\n---|---|---\n");
-		}
-		else 
-        {
-			printf(" %c | %c | %c",board[i][0],board[i][1],board[i][2]);
-		}
-	}
-}
+    printf(" %c | %c | %c ",board[0][0],board[0][1],board[0][2]);
+    printf("\n---|---|---\n");
+    printf(" %c | %c | %c ",board[1][0],board[1][1],board[1][2]);
+    printf("\n---|---|---\n");
+    printf(" %c | %c | %c \n",board[2][0],board[2][1],board[2][2]);
+    printf("\n");
+ }
 void reset_board(char board[BOARD_SIZE][BOARD_SIZE])
 {
 	for(int i = 0; i < BOARD_SIZE; i++)
