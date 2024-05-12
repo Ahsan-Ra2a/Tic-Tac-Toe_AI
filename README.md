@@ -70,13 +70,13 @@ Hard mode employs an advanced minimax algorithm to determine the best possible m
 5. Select the desired difficulty mode when prompted.
 6. Follow the on-screen instructions to play the game.
 
-## Example Usag3
+## Example Usage
 ```
-## Run on cmd for download in any directory...
+Run on cmd for download in any directory...
 
 git clone https://github.com/Ahsan-Ra2a/Tic-Tac-Toe_AI.git
 
-## Compile and run on terminal..
+Compile and run on terminal..
 
 gcc main.c tic-tac-toe.c -o tic-tac-toe
 ./tic-tac-toe
