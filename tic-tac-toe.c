@@ -14,7 +14,7 @@ int easy_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol)
 
     } while (board[x][y] != EMPTY_CELL);
 
-    board[x][y] = symbol;
+    board[x][y] = symbol;
 }
 void medium_mode(char board[BOARD_SIZE][BOARD_SIZE], char symbol, char p_symbol)
 {
