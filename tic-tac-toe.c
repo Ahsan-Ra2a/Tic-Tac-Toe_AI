@@ -151,7 +151,7 @@ int minimum(char board[BOARD_SIZE][BOARD_SIZE], char p_symbol,char symbol) {
 bool win_check(char board[BOARD_SIZE][BOARD_SIZE], char symbol) {
     
     for (int i = 0; i < BOARD_SIZE; ++i) {
-        // Check if the player is wining by row
+        
         if (board[i][0] == symbol && board[i][1] == symbol && board[i][2] == symbol) {
             return true; 
         }
